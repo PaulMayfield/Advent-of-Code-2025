@@ -1,30 +1,21 @@
-# Advent of Code 2025
+# Advent-of-Code-2025
+Daily Puzzles from Advent of Code 2025
+https://adventofcode.com/
 
-Repository to solve Advent of Code 2025 problems in Python. Each day gets its own module under `days/` and the `run_all.py` runner executes available days and collects output.
+Sharing code to encourage others to share how they worked up their answer.
+Each user gets a different input file each day, so my answers will be different than yours.
 
-Structure
+My code pulls the input files from the website directly. You will not be able to re-run my code unless you have your own session key. I stored mine in my local machine's enviroment variables.
 
-- `days/` — day solutions (e.g., `day01.py`, `day02.py`)
-- `run_all.py` — simple runner to execute day scripts
-- `requirements.txt` — third-party dependencies (if any)
+Bing chat says this is how you can get your session key:
 
-Getting started
+Sure, here are the steps to get your session cookie from Advent of Code:
 
-1. Create a virtual environment and install dependencies:
+Log in to Advent of Code and access any puzzle input page1.
+Right-click the page and click "Inspect".
+Navigate to the “Network” tab.
+Click on any request, and go to the “Headers” tab.
+Search through the “Request Headers” for a header named "cookie".
+You should find one value that starts with session=, followed by a long string of hexadecimal characters.
+Please note that the session cookies from the Advent of Code website are valid for about a month, so you only have to get your cookie once per event. The session cookie is a small piece of data used to authenticate yourself to the Advent of Code web servers2.
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-2. Run the runner:
-
-```powershell
-python run_all.py
-```
-
-Push to GitHub
-
-- Initialize git and push: `git init; git add .; git commit -m "Initial scaffold"; git branch -M main; git remote add origin <repo-url>; git push -u origin main` 
-- Or use `gh repo create` to make and push the repo in one command.
